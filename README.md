@@ -1,28 +1,32 @@
 # Mega C Utility Library (MegaCLib)
 
-A modular C library containing **200+ utility functions**, **STL-like data structures**, and **algorithm implementations** designed for learning data structures, algorithms, and systems programming in C.
+![Language](https://img.shields.io/badge/language-C-blue)
+![Build](https://img.shields.io/badge/build-Makefile-green)
+![License](https://img.shields.io/badge/license-MIT-orange)
 
-This project aims to replicate many features similar to the **C++ STL** but implemented purely in **C language**.
+A modular C library containing **200+ utility functions**, **STL-like data structures**, and **algorithm implementations** designed for learning **Data Structures, Algorithms, and Systems Programming in C**.
 
----
-
-## Features
-
-* 200+ utility functions
-* STL-like data structures
-* Multiple sorting algorithms
-* Searching algorithms
-* String utilities
-* Mathematical utilities
-* Matrix operations
-* Bit manipulation utilities
-* Algorithm benchmarking
-* Modular project structure
-* Example programs and unit tests
+This project replicates several features of the **C++ STL**, but implemented entirely in **pure C**.
 
 ---
 
-## Project Structure
+# Features
+
+✔ 200+ utility functions
+✔ STL-like data structures
+✔ Multiple sorting algorithms
+✔ Searching algorithms
+✔ String utilities
+✔ Mathematical utilities
+✔ Matrix operations
+✔ Bit manipulation utilities
+✔ Algorithm benchmarking
+✔ Modular project structure
+✔ Example programs and unit tests
+
+---
+
+# Project Structure
 
 ```
 mega-c-library/
@@ -84,14 +88,13 @@ mega-c-library/
 ├── README.md               # Project description
 ├── LICENSE
 └── .gitignore
-
 ```
 
 ---
 
-## Modules
+# Modules
 
-### Data Structures
+## Data Structures
 
 * Vector (Dynamic Array)
 * Stack
@@ -99,7 +102,11 @@ mega-c-library/
 * Linked List
 * HashMap
 
-### Algorithms
+---
+
+## Algorithms
+
+Sorting Algorithms
 
 * Bubble Sort
 * Selection Sort
@@ -107,11 +114,16 @@ mega-c-library/
 * Merge Sort
 * Quick Sort
 * Heap Sort
-* Binary Search
+
+Searching Algorithms
+
 * Linear Search
+* Binary Search
 * Jump Search
 
-### Array Utilities
+---
+
+## Array Utilities
 
 * Reverse Array
 * Rotate Array
@@ -119,17 +131,21 @@ mega-c-library/
 * Remove Duplicates
 * Find Second Largest
 
-### String Utilities
+---
+
+## String Utilities
 
 * String Length
 * String Copy
 * String Compare
 * String Reverse
-* String To Upper
-* String To Lower
+* Convert to Uppercase
+* Convert to Lowercase
 * Remove Spaces
 
-### Math Utilities
+---
+
+## Math Utilities
 
 * Factorial
 * Power
@@ -138,14 +154,18 @@ mega-c-library/
 * Fibonacci
 * Armstrong Number
 
-### Matrix Operations
+---
+
+## Matrix Operations
 
 * Matrix Addition
 * Matrix Subtraction
 * Matrix Multiplication
 * Matrix Transpose
 
-### Bit Manipulation
+---
+
+## Bit Manipulation
 
 * Set Bit
 * Clear Bit
@@ -155,9 +175,9 @@ mega-c-library/
 
 ---
 
-## Build Instructions
+# Build Instructions
 
-Compile the library using Make:
+Compile the library using **Make**:
 
 ```
 make
@@ -166,12 +186,12 @@ make
 This generates the static library:
 
 ```
-libmegac.a
+build/libmegac.a
 ```
 
 ---
 
-## Example Usage
+# Example Usage
 
 ```c
 #include "vector.h"
@@ -182,24 +202,25 @@ int main() {
 
     vector_init(&v);
 
-    vector_push(&v,10);
-    vector_push(&v,20);
-    vector_push(&v,30);
+    vector_push(&v, 10);
+    vector_push(&v, 20);
+    vector_push(&v, 30);
 
+    return 0;
 }
 ```
 
-Compile example:
+Compile the example:
 
 ```
-gcc example.c -L. -lmegac
+gcc example.c -Iinclude -Lbuild -lmegac
 ```
 
 ---
 
-## Benchmark
+# Benchmark
 
-The project includes a benchmarking module to compare algorithm performance.
+The project includes benchmarking tools to compare algorithm performance.
 
 Example comparisons:
 
@@ -209,16 +230,16 @@ Example comparisons:
 
 ---
 
-## Goals of This Project
+# Goals of This Project
 
 * Practice advanced **C programming**
 * Learn **data structures and algorithms**
 * Understand **modular software design**
-* Create a strong **GitHub portfolio project**
+* Build a strong **GitHub portfolio project**
 
 ---
 
-## Future Improvements
+# Future Improvements
 
 * Generic containers (support any data type)
 * Thread-safe data structures
@@ -228,12 +249,12 @@ Example comparisons:
 
 ---
 
-## License
+# License
 
-This project is open source and available under the **MIT License**.
+This project is open source under the **MIT License**.
 
 ---
 
-## Author
+# Author
 
-Created for learning and practicing **systems programming and algorithms in C**.
+Developed as a learning project for **Data Structures, Algorithms, and Systems Programming in C**.
